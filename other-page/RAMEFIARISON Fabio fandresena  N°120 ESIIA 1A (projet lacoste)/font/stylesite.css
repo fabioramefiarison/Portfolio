@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 13px;
+    color: rgb(243, 234, 241);
+    font-family:lien;
+    font-size: 18px;
+    background-color: rgb(233, 95, 171);
+    border-radius: 8px;
+    padding: 2px;
+}
+nav a:hover{
+    font-size: 19px;
+    background-color: rgb(180, 24, 110);
+    
+}
+@font-face {
+    font-family: lien;
+    src: url("font/BAUHS93.TTF");
+}
+#lien{
+   text-align: right ;
+   margin-right: 10px;
+}
+body{
+background-color:rgb(16, 165, 16) ;
+
+}
+
+header{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 6px;
+    box-shadow: 2px 3px 5px rgb(46, 112, 46);
+    background-color:rgb(8, 151, 8) ;
+}
+    
+
+.titre{
+   background-image: url("image/logo/logoe.png"); 
+   background-repeat: no-repeat;
+   background-position: left bottom;
+   background-size: 70px;
+   text-align: center;;
+    
+} 
+.mag{
+    font-size: 30px;letter-spacing: 5px ;
+    font-family: stylea;
+    letter-spacing: 8px;
+    color: rgb(226, 202, 202);
+    padding-top: 5px;
+}
+.kaira{
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: style;
+    animation-name: style;
+    animation-duration: 10s;
+    text-shadow: 2px 4px rgb(238, 20, 104);
+    
+}
+@keyframes style {
+    from{ text-shadow: 2px 4px rgb(233, 19, 55);}
+    to{text-shadow: 2px 4px blue;}
+} 
+@font-face{
+    font-family: stylea;
+    src: url("font/ARLRDBD.TTF");
+}  
+@font-face{
+    font-family: style;
+    src: url("font/RAVIE.TTF");
+}
+#millieu{
+    margin-left: 9%;
+    margin-top: 10%;
+    background-image: url("image/logo/LACOSTE1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    background-clip: border-box;
+    padding-right: 60%;
+    padding-right: 10%;
+}
+.cont{
+    font-size: 11px;
+    color:rgb(233, 193, 199);
+}
+strong p{
+    font-size: 27px;
+    letter-spacing: 10%;
+}
+.red{
+    color: rgb(187, 55, 77);
+}
+p a{
+    text-decoration: none;
+    font-size: 30px;
+    color:white;
+    background-color: rgb(187, 55, 77);
+    border-radius: 10px;
+    padding: 5px;
+}
+p a:hover{
+    background-color: rgb(143, 13, 143);
+    
+}
+p i{
+    font-size: 12px;
+}
+div img{
+    width: 30px;
+    margin-left: 70px;
+}
+.resaka{
+background-color: rgb(46, 112, 46,0.2);
+display: flex;
+margin-top: 50px;
+justify-content: center;
+padding-top: 40px;
+margin-bottom: 70px;
+padding-bottom: 40px;
+
+}
+.resaka img{
+border: 0.3em solid rgba(58, 172, 86, 0.493);
+border-radius: 50px;
+padding: 5px;
+}
+.nul{
+    border: 1px solid rgb(42, 104, 42,0.3);
+    padding-top:20PX;
+    padding-bottom: 20px;
+    padding-left: 7px;
+    padding-right: 7PX;
+    margin-right: 25px;
+}
+.nul strong{
+padding-left: 50px;
+}
+#end{
+    display: flex;
+    background-color: rgb(46, 112, 46,0.2);
+    padding-left: 225px;
+    
+}
+footer p{
+    margin-right: 80px;
+    padding-top: 50px ;
+}
+@font-face {
+    font-family: end;
+    src: url("font/CHILLER.TTF");
+}
+#end strong{
+    font-family: end;
+}
+#end img{
+    width: 12px;
+    margin-right: 10px;
+}
+H1{
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    color: rgb(224, 30, 62);
+    line-height: 20px;
+    letter-spacing: 3px;
+
+}
+.prod1{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 60px;
+}
+.prod1 img{
+    width: 190px;
+    margin: 25px;
+}
+.prod1 img:hover{
+    width: 210px;
+}
+.prod1 p{
+    border: 1px solid rgba(39, 151, 82, 0.315);
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgba(12, 141, 29, 0.514);
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+.prod2{
+   display: flex ;
+   align-items: center;
+   margin-left:170px;
+   margin-bottom: 150px;
+}
+.prod2 img{
+    width: 200px;
+    padding-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.prod2 img:hover{
+    width: 220px;
+}
+.prod2 p{
+    border: 1px solid rgba(39, 151, 82, 0.315);
+    background-color: rgba(12, 141, 29, 0.514);
+    border-radius: 50px;
+    margin-right: 20px;
+}
+h2{
+    color: rgb(187, 55, 77);
+}
+#farany img{
+    width: 190px;
+}
+#farany label{
+    display: flex;
+}
+
+.produit3{
+    display: flex;
+    margin-left: 150px;
+}
+.produit3 img{
+    width: 190px;
+    margin: 25px;
+}
+.produit3 img:hover{
+    width: 210px;
+}
+.produit3 p{
+    border: 1px solid rgba(39, 151, 82, 0.315);
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgba(12, 141, 29, 0.514);
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+.produit4{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 160px;
+}
+.produit4 img{
+    width: 190px;
+    margin: 25px;
+}
+.produit4 img:hover{
+    width: 210px;
+}
+.produit4 p{
+    border: 1px solid rgba(39, 151, 82, 0.315);
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgba(12, 141, 29, 0.514);
+    border-radius: 50px;
+    letter-spacing: 2px;
+}

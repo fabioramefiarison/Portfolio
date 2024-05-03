@@ -1,0 +1,114 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 ;
+}
+body{
+    background-image: linear-gradient(red, yellow, green);
+    background-repeat: no-repeat;
+}
+.montre{
+width: 300px;height: 300px;
+background-image: url("son/FB_IMG_16616742639406642.jpg") ;
+background-size: 110%;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 50%;
+position: relative;
+margin:11% 20% 15% 37%;
+box-shadow: 20px 20px 50px 15px rgba(240, 33, 33, 0.692);
+animation: bordure 1s infinite;
+
+}
+@keyframes bordure {
+   from{border: 6px dotted rgb(240, 16, 16);}
+   to{border: 5px solid rgb(236, 32, 5);}
+}
+.numero{
+    color:white;
+    position: absolute;
+    width: 100%;height: 100%;
+    text-align: center;
+}
+.numero1{transform: rotate(30deg);}
+.numero2{transform: rotate(60deg);}
+.numero3{transform: rotate(90deg);}
+.numero4{transform: rotate(120DEG);}
+.numero5{transform: rotate(150DEG);}
+.numero6{transform: rotate(180DEG);}
+.numero7{transform: rotate(210DEG);}
+.numero8{transform: rotate(240DEG);}
+.numero9{transform: rotate(270DEG);}
+.numero10{transform: rotate(300DEG);}
+.numero11{transform: rotate(330DEG);}
+.numero12{transform: rotate(360DEG);}
+.numero3,.numero6,.numero9,.numero12{
+    font-size: 50px;
+}
+.numero1,.numero2,.numero4,.numero5,.numero7,.numero8,.numero10,.numero11{
+    font-size:20px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(219, 29, 4, 0.897);
+    text-shadow: 2px 1px rgb(158, 37, 37);
+}
+.aigu{
+    --rotation : 0;
+     position: absolute;
+     background-color: rgb(192, 42, 172);
+     bottom: 50%;
+     left: 50%;
+     width:8px;
+     height: 147px;
+     transform-origin: bottom;
+     border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+     transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg)); 
+     z-index: 5;  
+}
+.aigu::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 17, 0);
+    width: 15px;height: 15px;
+    top:100%;left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.secondes{
+    position: absolute;
+    width: 1px;
+    height: 149px;
+    background-color: rgb(255, 255, 255);
+}
+.minutes{
+    position:absolute ;
+    width: 6px;
+    height: 130px;
+    background-color: rgb(240, 11, 11);
+}
+.heures{
+    position: absolute;
+    width: 12px;
+    height: 90px;
+    background-color: rgb(255, 17, 0);
+}
+
+p{
+    position: absolute;
+    top:38%;
+    left:43%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+    color: rgba(255, 255, 255, 0.418);
+}
+audio{
+    position: absolute;
+    bottom: 50%;
+    left: 37%;
+
+}
+@media only screen and (max-width : 768px) {
+    .montre{
+       margin-bottom: 38.5%;
+       right: 13%;
+    }
+}

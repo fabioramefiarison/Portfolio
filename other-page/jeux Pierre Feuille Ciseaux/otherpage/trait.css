@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(30, 30, 206) !important;
+}
+.p1{
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin-top: 10%;
+    background-color: blue;
+}
+.pi{
+    color: rgb(126, 133, 134);
+}
+.pi:hover{
+    text-shadow: 4px 4px  8px white;
+    font-size: 101px;
+}
+.fe{
+    color: green;
+}
+.fe:hover{
+    text-shadow: 4px 4px 8px rgb(2, 255, 2);
+    font-size: 101px;
+}
+.ci{
+    color: rgb(252, 90, 171);
+}
+.ci:hover{
+    text-shadow: 4px 4px 8px rgb(255, 4, 180);
+    font-size: 101px;
+}
+.r{
+    position: absolute;
+    font-size: 35px;
+    opacity: 0.2;
+}
+.a-pier{
+    top:19%;
+    left: 21%;
+}
+.a-cis{
+    top:19%;
+    left: 63.5%;
+}
+.a-paps{
+    top:19%;
+    left: 47.6%;
+}
+.choix{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    color: blanchedalmond;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.score{
+    text-align: center;
+    font-size: 50px;
+    font-family: colonna;
+}
+@font-face {
+    font-family: colonna;
+    src: url("../font/COLONNA.TTF");
+}
+.jou{
+    margin-right: 30px;
+    text-decoration: underline;
+}
+.rob{
+    margin-left: 50px;
+    text-decoration: underline;
+}
+.vs{
+    font-size: 80px;
+}
+.bout{
+    border: none;
+    background-color: blue;
+}

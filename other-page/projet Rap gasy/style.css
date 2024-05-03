@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(67, 27, 71, 0.774);
+}
+.navbar a{
+    text-decoration: none;
+    font-family: nav;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: rgb(216, 105, 207);
+    border-radius: 10px ;
+}
+.navbar a:hover{
+    color:rgba(179, 43, 160, 0.767);
+    font-size: 26px;
+    background-color: rgba(238, 136, 224, 0.89);
+    box-shadow: 4px 4px 5px 7px rgb(196, 100, 167) ;
+}
+@font-face {
+    font-family: nav;
+    src: url("font/HARLOWSI.TTF");
+}
+.navbar li{
+    display: inline;
+    padding: 7px;
+    margin-left: 4%;
+    border-radius: 8px;
+}
+header nav{
+    text-align: center;
+    float:center;
+    margin-top: -30px;
+}
+#titre img{
+    width: 8%;
+    margin-left: 3.5%;
+    border: 2px ssolid white;
+    border-radius: 40px;
+    box-shadow:4px 4px 2px 6PX rgba(163, 109, 159, 0.918);
+}
+header{
+    background-color: rgb(241, 229, 221) ;
+    padding-top: 3%;
+    padding-bottom: 0.6%;
+    border: 1px  solid rgba(172, 159, 151, 0.856);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow:0px 1px  rgba(168, 151, 166, 0.342);
+}
+
+#contact{
+    margin-left:78%;
+}
+@media screen and (max-width : 767px) {
+    #contact{
+      margin-left:70% ; 
+    }
+    #logofb img{
+        width: 2.5%;
+    }
+    #sepasse{
+        margin-right: 15px;
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    #sepasse img{
+        width: 400px;
+        height: 300px;
+    }
+    #millieu{
+      display: block !important;
+      margin: 10px 10px !important;
+      padding-left: 28px !important;
+      padding-bottom: 10px !important;
+      border-radius: 12px !important;
+    }
+    #deuxieme{
+        margin: 10px 0 !important;
+        padding-right: 10px;
+        margin-right: 6px !important;
+        margin-left: -6px !important;
+    }
+    #troisieme video{
+        width: 400px !important;
+    }
+    #deuxieme a img{
+      width: 400px !important;
+      margin-left: 0 !important;
+      margin-right: 10px !important;
+      padding-left: 10px !important;
+    }
+    #troisieme{
+     width: 420px!important;
+     margin-left: 0 !important;
+    }
+}
+#sepasse{
+border: 1px solid rgb(241, 229, 221);
+background-color: rgb(248, 247, 248);
+box-shadow:rgb(241, 229, 221) ;
+border-radius: 10px;
+padding-top: 5px;
+text-align: center;;
+}
+#logo{
+    letter-spacing: 3px;
+    font-size: 25px;
+    animation-name: logo;
+    animation:logo 4s infinite;
+}
+@keyframes logo {
+  from{color: rgb(64, 197, 197);text-shadow: 3px 3px blueviolet;}
+  to{color: red ;text-shadow: 4px 4px rgb(36, 177, 23);}
+    
+}
+#millieu{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(233, 215, 187, 0.883);
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px dashed rgba(233, 215, 187, 0.883);
+    border-radius: 10px 10px 0px 0px  ;
+}
+#deuxieme{
+margin-left: 20px;
+padding-right: 15px;
+padding-top: 12px;
+border: 6px dashed wheat;
+border-radius: 12px;
+}
+#diosezy-actus{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+#deuxieme a img{
+ width:450px;
+height: 300px;
+ border-radius: 20px;
+ margin-left: 10px;
+ margin-top: 3px;
+ margin-bottom: 15px;
+ transition: height 2s;
+}
+#deuxieme a img:hover{
+    height: 310px;
+}
+#troisieme{
+    border: 6px solid wheat;
+    border-radius: 12px;   
+   margin-left: 25px;
+}
+#chansonprem{
+text-align: center;
+font-size: 23px;
+color: rgb(0, 0, 0);
+letter-spacing: 3px;
+padding-top: 15px;
+}
+#chansonprem em{
+    font-size: 25px !important;
+    color: rgb(47, 71, 180);
+    letter-spacing: 1px;
+    line-height: 8px;
+}
+#millieu2{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(233, 215, 187, 0.883);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 13px;
+}
+.evtext{
+    text-align: center;
+    background-color: rgba(245, 223, 189, 0.938);
+    margin-left: 20px;margin-right: 20px;
+    padding-top: 15px;
+    font-size: 60px;
+    letter-spacing: 5px;
+    box-shadow: rgb(233, 206, 173);
+    color: rgb(247, 51, 204);
+    font-family: event;
+    text-decoration: underline;
+}
+@font-face {
+    font-family: event;
+    src: url("font/CHILLER.TTF");
+}
+#zzrp{
+    animation: imagezrp 8s infinite ;
+    background-repeat: no-repeat;
+    height: 365px;
+    width: 480px;
+    margin-top: 7px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#zzrp p{
+   font-size: 200px;
+    visibility: hidden;
+}
+@keyframes imagezrp {
+    from{ background-image: url("image/PicsArt_11-21-01.12.31.jpg");}
+    to{background-image: url("image/FB_IMG_16678846257601446.jpg");}
+}
+#zzrp1{
+    border: 6px solid wheat;
+    border-radius: 10px;
+    padding: 15px 10px 5px 10px;
+    font-family: textzrt;
+    letter-spacing: 7px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+@font-face {
+    font-family: textzrt;
+    src: url("font/IMPRISHA.TTF");
+}.text-zrt{
+    margin-left: 15px;
+}
+#animation p{
+    animation: tsyhaiko alternate 50s ;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards ;
+    font-size: 20px;
+    position: absolute;
+}
+@keyframes tsyhaiko {
+   0%{
+    transform: translate(0px,-650px);
+
+   } 
+   15%{
+       transform: translate(-500px,-650px);
+   }
+    30%{
+        transform: translate(0px ,-650px)  ;
+      }
+    45%{
+        transform: translate(-10px,-100px);
+    }
+    60%{
+        transform: translate(400px,70px);
+    }
+    75%{
+        transform: translate(-100px, -50px) ;
+    }
+    100%{
+        transform: translate(0px 4px);
+    }
+}
+.psy{
+    border: 6px solid wheat;
+    border-radius: 10px;
+    font-family: textzrt;
+    letter-spacing: 7px;
+    font-size: 20px;
+    padding: 15px 10px 0px 10px;
+    box-sizing: border-box;
+}
+#psy-event{
+    background-image: url("image/FB_IMG_16660925281064084.jpg") ;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 360px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#psy-event p{
+    text-align: center;
+    font-size: 200px;
+    visibility: hidden;
+}
+.psy-mouve{
+    background-color: sienna;
+}
+#text-psy{
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+#double{
+    border: 6px solid wheat;
+    border-radius: 10px;
+    font-family: textzrt;
+    letter-spacing: 7px;
+    font-size: 17px;
+    padding: 15px 10px 0px 10px;
+    box-sizing: border-box;
+    background-color: rgba(233, 215, 187, 0.883);
+    text-align: center;
+    margin-left: 15px;
+}
+#double1 p{
+    visibility: hidden;
+    font-size: 150px;
+    padding-bottom: 22px;
+}
+#double1{
+    animation: doublenn 8s infinite;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 360px;
+    border-radius: 10px;
+}
+@keyframes doublenn {
+    from{
+        background-image: url("image/PicsArt_11-23-08.13.51.jpg");
+    }
+    to{
+        background-image: url("image/PicsArt_11-23-07.55.14.jpg");
+    }
+    
+}
+.text-double{
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
