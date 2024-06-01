@@ -1024,7 +1024,7 @@ color: var(--color--second);
       transform: translateX(-2vw) !important;
     }
     header section:nth-child(3){
-      top: 20px
+      top: 10px;
     }
     #poste{
       font-size: 6vw;  
@@ -1032,7 +1032,6 @@ color: var(--color--second);
     }
     .menu-burger {
         visibility: visible;
-      transform: translateY(10px);
     }
     #container-acceuil{
       grid-template-columns: 15% 85%;
