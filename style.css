@@ -14,7 +14,7 @@
 
 body{
   background-color: var(--color-white-main);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   color: rgb(29, 25, 25) !;
 }
 
