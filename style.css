@@ -178,7 +178,7 @@ header section:nth-child(3) button:hover{
     display: inline-block;
     width: 40px;
     height: 24px;
-    transform: translateY(9px);
+    transform: translateY(5px);
   }
   
   .switch input { 
