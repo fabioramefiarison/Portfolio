@@ -1032,6 +1032,7 @@ color: var(--color--second);
     }
     .menu-burger {
         visibility: visible;
+      transform: translateY(10px);
     }
     #container-acceuil{
       grid-template-columns: 15% 85%;
