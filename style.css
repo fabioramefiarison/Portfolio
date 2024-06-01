@@ -1,10 +1,14 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box:
+  box-sizing: border-box;
+  font-family: font-main;
 }
 
-
+@font-face {
+  font-family: font-main;
+  src: url("font/tahoma.ttf");
+}
 
 :root{
   --color-white-main:white;
@@ -14,8 +18,8 @@
 
 body{
   background-color: var(--color-white-main);
-  overflow-x: hidden !important;
-  color: rgb(29, 25, 25) !;
+  overflow-x: hidden;
+  
 }
 
 header{
@@ -33,6 +37,7 @@ header section p{
 .Portfolio{
   color: var(--color--second);
   margin-left: 5px;
+  margin-bottom: -20px !important;
 }
 @keyframes appart-img-logo {
   from{
@@ -73,6 +78,7 @@ header section:nth-child(2) nav ul li a{
   font-weight: bold;
   color: black;
   font-size: 18px;
+  transition: 0.3s ease-in-out;
   scroll-behavior: smooth;
 }
 .img-side-bar{
@@ -172,7 +178,7 @@ header section:nth-child(3) button:hover{
     display: inline-block;
     width: 40px;
     height: 24px;
-    top: -2px;
+    top: -18px;
   }
   
   .switch input { 
@@ -252,7 +258,7 @@ header section:nth-child(3) button:hover{
 
   #container-acceuil{
     display: grid;
-    grid-template-columns: 15% 60% 20%;
+    grid-template-columns: 15% 65% 15%;
     padding-bottom: 100px ;
   }
   .ma-photo{
@@ -305,20 +311,6 @@ header section:nth-child(3) button:hover{
     text-align: left;
     font-size: 35px;
     letter-spacing: 2px;
-    animation: acceuil-anim 2s ease forwards;
-  }
-  @keyframes acceuil-anim {
-    0%{
-      opacity: 0;
-      transform: translateY(5vw);
-    }
-    60%{
-      opacity: 0.7;
-      transform: translateY(3vw);
-    }
-    100%{
-      transform: translateY(0);
-    }
   }
   .mon-nom{
     letter-spacing: 0px;
@@ -382,7 +374,7 @@ header section:nth-child(3) button:hover{
 #Apropos{
   padding: 100px 0;
   display: flex; 
-  flex-wrap: wrap;
+  flex-wrap:  wrap;
   background-image: linear-gradient(to right, var(--color-aqua-main) 10% , var(--color-white-main));
 }
 #Apropos section{
@@ -394,12 +386,12 @@ header section:nth-child(3) button:hover{
   border: 10px solid var(--color-white-main);
   float: right;
   margin-right: 20px;
-  transition: 0.2s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 #Apropos section:nth-child(1) img:hover{
   cursor: pointer;
-  box-shadow: 3px 8px 20px black;
+  transform: rotate(-45deg);
 }
 .appart-apropos-img{
   animation: appart-img-apropos 2s ease-in;
@@ -746,7 +738,7 @@ img {
 .container {
   padding: 10px 40px;
   position: relative;
-  background-image: linear-gradient(to top,var(--color--second) 25%, var(--color-white-main) 15%, var(--color-aqua-main) 60%) ;
+  background-image: linear-gradient(to top,var(--color--second) 20%, var(--color-white-main) 20%, var(--color-aqua-main) 60%) ;
   width: 50%;
 }
 
@@ -972,7 +964,8 @@ color: var(--color--second);
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         box-shadow: 1px 1px 64px gainsboro;
-        padding: 7px 15px;
+        padding-bottom: 5px;
+        padding: 5px 20px;
     }
     .headerSombre{
       box-shadow: 1px 2px 21px rgb(17, 140, 189);
@@ -985,7 +978,7 @@ color: var(--color--second);
     }
     header section:nth-child(2){
       position: absolute;
-      top: 83.5px;
+      top: 80px;
       background-image: linear-gradient(to left, var(--color-aqua-main) 10% , var(--color-white-main));
       width: 160px;
       height: 88vh;
@@ -1155,10 +1148,6 @@ color: var(--color--second);
     #chargement-debut img{
       width: 50px !important;
     }
-    .appart-apropos-img, .appart-descr, .appart-compet-span{
-      animation: none !important;
-    }
-
   }
 
 
