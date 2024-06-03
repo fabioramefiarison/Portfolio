@@ -21,7 +21,15 @@ body{
   overflow-x: hidden;
   
 }
+/*#container-page {
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
+#container-page.visible {
+  opacity: 1;
+  transform: translateY(0) !important;
+}*/
 header{
   display: grid;
   grid-template-columns: 20% 55% 25%;

@@ -41,7 +41,13 @@ let Apropos = Get('Apropos')
 let projets = Get('projets')
 let formInput = document.querySelectorAll("#form-contact input")
 
-
+let btnCv = document.getElementById("btn-cv");
+btnCv.addEventListener('click', function () {
+  const lienCv = document.createElement('a');
+  lienCv.href = "image/cv-Fabio.pdf";
+  lienCv.download = "cv-Fabio.pdf";
+  lienCv.click();
+})
 const changeAllColor = ()=> {
   myHeader.classList.toggle('change-theme-sombre')
   BODY.classList.toggle('change-theme-sombre')
@@ -232,11 +238,31 @@ function showSlides(n) {
 
           const targetId = this.getAttribute('href').substring(1);
           const targetElement = document.getElementById(targetId);
-
           targetElement.scrollIntoView({ behavior: 'smooth' });
       });
   }
+ /* const containerPage = document.getElementById("container-page");
+  const apropos = document.getElementById("Apropos");
+  const competences = document.getElementById("competences");
+  const projet = document.getElementById("projets");
+  const contact = document.getElementById("contact");
+  const sections = [containerPage, apropos, competences, projet, contact]
 
+  const observer = new IntersectionObserver(entries => {
+      sections.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target); // Arrête d'observer l'élément une fois qu'il est visible
+          }
+      });
+  }, {
+      threshold: 0.1 // Ajustez cette valeur selon vos besoins
+  });
+
+  sections.forEach(section => {
+      observer.observe(section);
+  });
+*/
 (function() {
   emailjs.init("wTVsJAEU42T0EMcU5"); // Remplacez YOUR_USER_ID par votre identifiant d'utilisateur Email.js
 
