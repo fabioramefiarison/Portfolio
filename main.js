@@ -221,17 +221,15 @@ function showSlides(n) {
 }
 
   const links = document.querySelectorAll('#myUl li a');
-  console.log(links);
   for (let link of links) {
       link.addEventListener('click', function(event) {
           event.preventDefault();
 
             btnToggle.classList.remove("change"); 
             myHeaderUL.classList.remove("displaUl")
-            console.log("ddff");
-            myUL.classList.remove("displaUl")
+              myUL.classList.remove("displaUl")
 
-            
+
           const targetId = this.getAttribute('href').substring(1);
           const targetElement = document.getElementById(targetId);
 
@@ -246,20 +244,18 @@ function showSlides(n) {
     event.preventDefault();
 
     // Récupérer les valeurs du formulaire
-    var prenom = document.getElementById('prenom').value;
-    var EmailContact = document.getElementById('email').value;
+    var EmailContact = document.getElementById('email_id').value;
     var messageContact = document.getElementById('message').value;
 
     // Paramètres de l'email
     var params = {
       from_name: prenom,
-      to_name: 'Fabio', // Remplacez par le nom du destinataire
-      message_html: messageContact,
-      reply_to: EmailContact
+      email_id: EmailContact,
+      message: messageContact
     };
 
     // Envoyer l'email
-    emailjs.send('service_vbvnjc2', 'template_lunfyle', params) // Remplacez YOUR_SERVICE_ID et YOUR_TEMPLATE_ID
+    emailjs.send('service_jzwb6pw', 'template_lunfyle', params) // Remplacez YOUR_SERVICE_ID et YOUR_TEMPLATE_ID
       .then(function() {
         alert('Email envoyé avec succès!');
         document.getElementById('emailForm').reset(); // Réinitialiser le formulaire après l'envoi
