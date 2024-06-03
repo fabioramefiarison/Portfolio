@@ -219,26 +219,26 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = "<a href='"+ dots[slideIndex-1].name + "' class='link-projet'>" + dots[slideIndex-1].alt + "<i class='fas fa-arrow-right'></i>" + "</a>" 
 }
-const links = document.querySelectorAll('#myUL li a');
-let clickCount = 0;
 
-links.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault()
-        clickCount++;
-    
-        if (clickCount === 1) {
-            // Défilement vers la section
-            const target = document.querySelector(link.getAttribute('href'));
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-              
-            // Réinitialisation du compteur
-            clickCount = 0;
-        }
-    });
-});
+  const links = document.querySelectorAll('#myUl li a');
+  console.log(links);
+  for (let link of links) {
+      link.addEventListener('click', function(event) {
+          event.preventDefault();
+
+            btnToggle.classList.remove("change"); 
+            myHeaderUL.classList.remove("displaUl")
+            console.log("ddff");
+            myUL.classList.remove("displaUl")
+
+            
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+  }
+
 (function() {
   emailjs.init("wTVsJAEU42T0EMcU5"); // Remplacez YOUR_USER_ID par votre identifiant d'utilisateur Email.js
 
