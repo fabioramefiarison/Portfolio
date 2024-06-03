@@ -231,7 +231,7 @@ links.forEach(link => {
             // Défilement vers la section
             const target = document.querySelector(link.getAttribute('href'));
             target.scrollIntoView({
-                behavior: 'smooth !important'
+                behavior: 'smooth'
             });
               
             // Réinitialisation du compteur
