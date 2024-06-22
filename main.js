@@ -4,7 +4,7 @@ function Get(id){
 
 const page = () =>{
 document.addEventListener('DOMContentLoaded', function() {
-    const boxes = document.querySelectorAll('.box');
+    const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
         const triggerBottom = window.innerHeight / 5 * 4;
