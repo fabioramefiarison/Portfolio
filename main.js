@@ -6,7 +6,7 @@ const page = ()=> {
     const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
-        const triggerBottom = window.innerHeight / 8 * 4;
+        const triggerBottom = window.innerHeight / 5 * 4;
 
         boxes.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
