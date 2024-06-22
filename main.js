@@ -2,8 +2,8 @@ function Get(id){
   return document.getElementById(id)
 }
 
-const page = (page){
-    const boxes = document.querySelectorAll('.boxy');
+const page = (page){page
+    const boxes = document.querySelectorAll('.box');
 
     const checkBoxes = () => {
         const triggerBottom = window.innerHeight / 5 * 4;
@@ -11,20 +11,15 @@ const page = (page){
         boxes.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
 
-            if (boxTop < triggerBottom) {
+            if(boxTop < triggerBottom) {
                 box.classList.add('show');
             } else {
                 box.classList.remove('show');
             }
-        })
-    };
-
+        });
+    }
     window.addEventListener('scroll', checkBoxes);
-
-    // Initial check in case some boxes are already in view
-    checkBoxes()
-
-
+    checkBoxes(); // Call the function initially to show any boxes already in view
 const myHeaderUL = document.querySelector("header section:nth-child(2")
 const myHeader = document.querySelector("header")
 const btnToggle = Get("menu-burger")
