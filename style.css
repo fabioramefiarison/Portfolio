@@ -955,13 +955,13 @@ color: var(--color--second);
   margin: auto;
   transition: 0.3s ease;
 }
-.box {
+.boxy {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.5s eease
 }
 
-.box.show {
+.boxy.show {
     opacity: 1;
     transform: translateY(0);
 }
