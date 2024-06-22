@@ -2,7 +2,7 @@ function Get(id){
   return document.getElementById(id)
 }
 
-const page = (){
+const page = ()=> {
     const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
