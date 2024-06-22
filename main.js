@@ -3,10 +3,10 @@ function Get(id){
 }
 
 const page = (page){page
-    const boxes = document.querySelectorAll('.box');
+    /*const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
-        const triggerBottom = window.innerHeight / 5 * 4;
+        const triggerBottom = window.innerHeight / 8 * 4;
 
         boxes.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
@@ -19,7 +19,7 @@ const page = (page){page
         });
     }
     window.addEventListener('scroll', checkBoxes);
-    checkBoxes(); // Call the function initially to show any boxes already in view
+    checkBoxes(); // Call the function initially to show any boxes already in view*/
 const myHeaderUL = document.querySelector("header section:nth-child(2")
 const myHeader = document.querySelector("header")
 const btnToggle = Get("menu-burger")
