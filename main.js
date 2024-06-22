@@ -2,8 +2,8 @@ function Get(id){
   return document.getElementById(id)
 }
 
-const page = (page){page
-    /*const boxes = document.querySelectorAll('.boxy');
+const page = (page){
+    const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
         const triggerBottom = window.innerHeight / 8 * 4;
