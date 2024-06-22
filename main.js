@@ -3,6 +3,28 @@ function Get(id){
 }
 
 const page = () =>{
+document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+
+    const checkBoxes = () => {
+        const triggerBottom = window.innerHeight / 5 * 4;
+
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top;
+
+            if (boxTop < triggerBottom) {
+                box.classList.add('show');
+            } else {
+                box.classList.remove('show');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', checkBoxes);
+
+    // Initial check in case some boxes are already in view
+    checkBoxes();
+});
 
 
 const myHeaderUL = document.querySelector("header section:nth-child(2")
@@ -241,6 +263,7 @@ function showSlides(n) {
           targetElement.scrollIntoView({ behavior: 'smooth' });
       });
   }
+  
  /* const containerPage = document.getElementById("container-page");
   const apropos = document.getElementById("Apropos");
   const competences = document.getElementById("competences");
@@ -291,28 +314,6 @@ function showSlides(n) {
       });
   });
 })();
-  document.addEventListener('DOMContentLoaded', function() {
-    const boxes = document.querySelectorAll('.box');
-
-    const checkBoxes = () => {
-        const triggerBottom = window.innerHeight / 5 * 4;
-
-        boxes.forEach(box => {
-            const boxTop = box.getBoundingClientRect().top;
-
-            if (boxTop < triggerBottom) {
-                box.classList.add('show');
-            } else {
-                box.classList.remove('show');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', checkBoxes);
-
-    // Initial check in case some boxes are already in view
-    checkBoxes();
-});
 
 }
 window.onload = () => {
