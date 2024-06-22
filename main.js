@@ -16,13 +16,13 @@ const page = (page){
             } else {
                 box.classList.remove('show');
             }
+        })
     };
 
     window.addEventListener('scroll', checkBoxes);
 
     // Initial check in case some boxes are already in view
-    checkBoxes();
-});
+    checkBoxes()
 
 
 const myHeaderUL = document.querySelector("header section:nth-child(2")
