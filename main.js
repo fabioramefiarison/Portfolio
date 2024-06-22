@@ -2,8 +2,7 @@ function Get(id){
   return document.getElementById(id)
 }
 
-const page = () =>{
-document.addEventListener('DOMContentLoaded', function() {
+const page = (page){
     const boxes = document.querySelectorAll('.boxy');
 
     const checkBoxes = () => {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 box.classList.remove('show');
             }
-        });
     };
 
     window.addEventListener('scroll', checkBoxes);
