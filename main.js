@@ -156,27 +156,7 @@ btnReadMore.onclick = () => {
       moreText.style.display = "inline";
     }
   }
-window.onscroll = () => {
 
-  if (window.scrollY > 260 && window.screenX > 740) {
-    let AproposImg = document.querySelector('#Apropos section:nth-child(1) img')
-    AproposImg.classList.add('appart-apropos-img')
-    let AproposDescription = document.querySelector('#Apropos section:nth-child(2)')
-    AproposDescription.classList.add('appart-descr')
-}
-
-const myCompetencesDivSectionspan = document.querySelectorAll('.my-Competences div section span')
-if (window.scrollY > 1020 && window.screenX > 740) {
-  for (let  i = 0;  i < myCompetencesDivSectionspan.length;  i++) {
-    myCompetencesDivSectionspan[i].classList.add('appart-compet-span')
-  }
-}
-
-const projets = document.querySelector('#projets section:nth-child(2)')
-if (window.scrollY > 2650) {
-  projets.classList.add('appart-projets')
-}
-}
 
 //effet hover sur les images de compétences 
 const parenTarget = document.querySelector('.my-Competences')
