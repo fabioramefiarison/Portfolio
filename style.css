@@ -55,8 +55,8 @@ header section p{
   }
 }
 .img-logo{
-  width: 55px;
-  border-radius: 10px;
+  width: 70px;
+  border-radius: 50px;
 }
 header section:nth-child(2) nav ul{
   display: flex;
