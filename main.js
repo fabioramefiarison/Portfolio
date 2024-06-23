@@ -38,11 +38,10 @@ switche.onmousemove = () =>{
 
 let btnEngagement = Get("btn-engagement")
 btnEngagement.onclick = () => {
-    alert("S'il vous plait ! Contacter moi sur mon compte gmail fabioramefiarison@gmail.com")
+    alert("S'il vous plait ! Contacter moi sur mon compte gmail fabioramefiarison@gmail.com ou rempir le formulaire juste dessous")
 }
 
 function messageAlerte (message, e){
-
         let box = document.createElement('span')
         switche.appendChild(box)
         box.textContent = message
