@@ -541,9 +541,9 @@ header section:nth-child(3) button:hover{
   background-color: #ddd;
 }
 .compet-span-hover{
-  background-color: var(--color-white-main);
-  position: absolute;
-  z-index: 1;
+  background-color: var(--color-white-main) !important;
+  position: absolute !important;
+  z-index: 1 !important;
   animation: anim-compet-span-img-hover 4s backwards;
   opacity: 0;
   padding: 2px 5px;
