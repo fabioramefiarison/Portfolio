@@ -1083,7 +1083,7 @@ color: var(--color--second);
       display: inline-block;
     }
     #Apropos section:nth-child(2){
-      margin-left: 10px;
+      margin-left: 40px;
     }
     #Apropos section:nth-child(1) img{
       width: 100%;
