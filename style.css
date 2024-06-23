@@ -19,7 +19,6 @@
 body{
   background-color: var(--color-white-main);
   overflow-x: hidden;
-  
 }
 /*#container-page {
   transform: translateY(20px);
@@ -372,10 +371,11 @@ header section:nth-child(3) button:hover{
 }
 
 #transition-1 img{
-  display: block;
+  display: block !important;
   margin: 10px auto;
   margin-bottom: -80px;
-  z-index:1;
+  z-index: 3 !important;
+  position: relative;
 }
 
 
@@ -405,7 +405,7 @@ header section:nth-child(3) button:hover{
 .appart-apropos-img{
   animation: appart-img-apropos 2s ease-in;
 }
-@keyframes appart-img-apropos {
+@keyframes appart-img-apropos { 
   0%{
     opacity: 0;
     transform: translateX(-300px);
@@ -541,9 +541,9 @@ header section:nth-child(3) button:hover{
   background-color: #ddd;
 }
 .compet-span-hover{
-  background-color: var(--color-white-main) !important;
-  position: absolute !important;
-  z-index: 1 !important;
+  background-color: var(--color-white-main) ;
+  position: absolute ;
+  z-index: 1;
   animation: anim-compet-span-img-hover 4s backwards;
   opacity: 0;
   padding: 2px 5px;
@@ -580,12 +580,14 @@ header section:nth-child(3) button:hover{
   display: block;
   margin: 0 auto;
   transform: translateY(40px);
+  z-index: 3 !important;
 }
 
 
 #projets{
   background-image: linear-gradient(to right, var(--color-aqua-main), var(--color-white-main));
   transition: 0.3s ease;
+  position: relative;
 }
 .appart-projets{
   animation: appart-projet 2s forwards;

@@ -4,9 +4,8 @@ function Get(id){
 
 const page = ()=> {
     const boxes = document.querySelectorAll('.boxy');
-
     const checkBoxes = () => {
-        const triggerBottom = window.innerHeight / 6 * 4;
+        const triggerBottom = window.innerHeight / 5 * 4;
 
         boxes.forEach(box => {
             const boxTop = box.getBoundingClientRect().top;
@@ -20,6 +19,7 @@ const page = ()=> {
     }
     window.addEventListener('scroll', checkBoxes);
     checkBoxes(); // Call the function initially to show any boxes already in view*/
+
 const myHeaderUL = document.querySelector("header section:nth-child(2")
 const myHeader = document.querySelector("header")
 const btnToggle = Get("menu-burger")
@@ -161,10 +161,8 @@ btnReadMore.onclick = () => {
 const parenTarget = document.querySelector('.my-Competences')
 const lesSpan = document.querySelectorAll('.my-Competences div section span img')
 
-
 lesSpan.forEach(target => {
     target.onmouseover = (e) => {
-
   let targetHover = document.createElement('span')
   parenTarget.appendChild(targetHover)
   targetHover.textContent = e.target.id
@@ -172,7 +170,7 @@ lesSpan.forEach(target => {
   targetHover.style.left = (e.pageX + 40) + 'px'
   targetHover.className = 'compet-span-hover'
     }
-});
+})
 
 
 //image projet scolaire
